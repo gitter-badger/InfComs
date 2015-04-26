@@ -2,7 +2,9 @@
 
 namespace DuncanA/InfComs;
 
-use pocketmine/plugin/pluginbase;
+use pocketmine\plugin\PluginBase;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 
 class InfComs extends PluginBase{
 
