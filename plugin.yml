@@ -14,3 +14,7 @@ commands:
   description: "Kicks player from server"
   usage: "/quit"
   permission: player.kick
+  inv:
+  description: "Lists all items in Player Iv"
+  usage: "/inv"
+  permission: inventory.BaseInventory
