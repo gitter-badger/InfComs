@@ -7,3 +7,4 @@ use pocketmine/plugin/pluginbase;
 class InfComs extends PluginBase{
 
 }
+```
