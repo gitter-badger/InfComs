@@ -10,3 +10,7 @@ commands:
   description: "Shows information about the server"
   usage: "/info"
   permission: myplugin.example
+  quit:
+  description: "Kicks player from server"
+  usage: "/quit"
+  permission: player.kick
