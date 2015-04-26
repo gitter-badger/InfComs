@@ -1,6 +1,6 @@
 <?php
 
-namespace DuncanA/InfComs;
+namespace DuncanA\InfComs;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
