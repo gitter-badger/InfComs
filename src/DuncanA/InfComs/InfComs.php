@@ -13,4 +13,13 @@ class InfComs extends PluginBase{
    public function onDisable() {
          $this->getLogger()->info("onDisable() has been called!");
    }
+   
+   public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+    if(strtolower($command->getName()) === "test"){
+        // Execute logic
+        return true;
+    }
+
+    return false;
+   }
 }
