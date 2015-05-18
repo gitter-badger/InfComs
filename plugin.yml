@@ -9,12 +9,30 @@ commands:
  info:
   description: "Shows information about the server"
   usage: "/info"
-  permission: myplugin.example
-  quit:
+  permission: infcoms.command.info
+ quit:
   description: "Kicks player from server"
   usage: "/quit"
-  permission: player.kick
-  inv:
+  permission: infcoms.command.quit
+ inv:
   description: "Lists all items in Player Iv"
   usage: "/inv"
-  permission: inventory.BaseInventory
+  permission: infcoms.command.inv
+permissions:
+  infcoms:
+    default: false
+    description: Allows the player all of the functions of InfComs
+    children:
+      infcoms.command:
+        default: false
+        description: Allows the player to use all of the commands
+        children:
+          infcoms.command.info:
+            default: true
+            description: Allows the player to use the info command
+          infcoms.command.quit:
+            default: op
+            description: Allows the player to use the quit command
+          infcoms.command.inv:
+            default: op
+            description: Allows the player to use the inv command
